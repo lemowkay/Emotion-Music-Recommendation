@@ -106,22 +106,7 @@ Preferred language + singer
 YouTube music search
 ```
 
-## ☁️ Streamlit Community Cloud deployment
 
-1. Push the project to GitHub, including `music.py`, `requirements.txt`, `model.h5`, and `labels.npy`.
-2. Visit [Streamlit Community Cloud](https://share.streamlit.io/).
-3. Create a new app from this repository and select `music.py` as the main file.
-4. Choose a Python version compatible with your TensorFlow and MediaPipe versions (Python 3.11 is a good target for the legacy code).
-5. Deploy and review **Manage app → Logs** if a dependency or runtime error occurs.
-
-Live webcam streaming on a hosted app may require WebRTC network configuration, HTTPS camera permissions, and appropriate media-server settings.
-
-## ⚠️ Current limitations
-
-- Emotion predictions are estimates from visual landmarks and should not be treated as reliable assessments of a person's internal emotional state.
-- Recommendations currently come from a **YouTube search**, not a dedicated music recommendation API or music-ranking model.
-- The app currently writes the prediction to `emotion.npy`. File-based state is not appropriate for separating multiple users in a hosted app; use per-session state instead.
-- Cloud deployment may require dependency pinning and changes to the code that opens YouTube links.
 
 ## 📌 Repository
 
