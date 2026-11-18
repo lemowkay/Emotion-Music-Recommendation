@@ -1,10 +1,10 @@
 streamlit
 streamlit-webrtc
 av
-numpy
+numpy<2
 pandas
 tensorflow
-mediapipe
+mediapipe==0.10.21
 opencv-python-headless
 Pillow
 scikit-learn
